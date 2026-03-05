@@ -1,0 +1,53 @@
+{
+    "name": "arriendo/bug-report",
+    "description": "Laravel bug reporting package with API-first design",
+    "type": "library",
+    "license": "LGPL-3.0-or-later",
+    "keywords": ["laravel", "bug-report", "bug-tracking", "issue-tracker"],
+    "authors": [
+        {
+            "name": "Nick Byam",
+            "email": "nbyam13@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "illuminate/support": "^10.0|^11.0",
+        "illuminate/database": "^10.0|^11.0",
+        "illuminate/mail": "^10.0|^11.0",
+        "illuminate/http": "^10.0|^11.0",
+        "illuminate/routing": "^10.0|^11.0",
+        "illuminate/contracts": "^10.0|^11.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0|^11.0",
+        "orchestra/testbench": "^8.0|^9.0",
+        "mockery/mockery": "^1.6",
+        "laravel/pint": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Arriendo\\BugReport\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Arriendo\\BugReport\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test:coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/pint",
+        "format:test": "vendor/bin/pint --test"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Arriendo\\BugReport\\BugReportServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
