@@ -1,0 +1,43 @@
+{
+  "name": "@arriendo/bug-report",
+  "version": "1.0.0",
+  "description": "Laravel bug reporting package with API-first design and optional Vue 3 components",
+  "main": "dist/bug-report.umd.js",
+  "module": "dist/bug-report.es.js",
+  "type": "module",
+  "files": [
+    "dist",
+    "resources/js",
+    "resources/views",
+    "resources/lang"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "laravel",
+    "bug-report",
+    "vue3",
+    "bug-tracking"
+  ],
+  "author": "Arriendo",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.13.6",
+    "vue": "^3.5.0",
+    "vue-i18n": "^11.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.4",
+    "vite": "^7.3.1"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0",
+    "vue-i18n": "^11.0.0"
+  }
+}
